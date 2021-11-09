@@ -52,7 +52,7 @@ function MovieList () {
             </div>
         );
     });
-
+    
     return (
         <div className="justify-content-center">
             <div id="header" className="col mb-4">
@@ -71,7 +71,7 @@ function MovieList () {
             
             <div className="container d-flex flex-wrap justify-content-center">
                 {returnedMovies}
-                {noMovieFound ? <h1>No Movie Found</h1> : null}
+                {noMovieFound ? <h1>Error 404: No Movies found</h1> : null}
             </div>
 
             <div id="footer" className="row justify-content-center pt-4 pb-3">
