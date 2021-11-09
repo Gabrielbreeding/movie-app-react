@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: darkblue;
+  color:white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  border-radius: 25% 10%;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+}
+
+#footer a {
+  color:lightblue;
+  list-style: none;
+}
+
+NavLink img:hover {
+  border-color: yellow;
+  border-style: solid;
 }
