@@ -39,7 +39,7 @@ function MovieDetails(properties) {
             </div>
 
             <div id="footer" className="row justify-content-center pt-4 pb-3 mt-2">
-                    <a className="mr-4" href="#search-bar">Search</a>
+                    <a className="mr-4" href="/#search-bar">Search</a>
                     <p>|</p>
                     <a className="ml-4" target="_blank" href="http://iwt.ranken.edu/gbreeding/BlogSite/">Developer</a>
             </div>
