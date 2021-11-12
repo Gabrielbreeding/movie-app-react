@@ -16,6 +16,7 @@ code {
 
 button {
   border-radius: 25% 10%;
+  width: 7rem;
 }
 
 #footer {

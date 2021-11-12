@@ -17,6 +17,7 @@ function MovieList () {
         setSearchTerm("");
         localStorage.removeItem("searchTerm");
         setNoMovieFound("");
+        document.getElementById("search-bar").value="";
     };
 
     const handleClick = (movie) => {
@@ -48,7 +49,7 @@ function MovieList () {
     const returnedMovies = movies.map(movie => {
         return (
             <div key={movie.imdbID} className="ml-2 mr-2 mb-2">
-                <NavLink to={`/${movie.imdbID}`}><img width="200px" height="300px" src={movie.Poster} alt={"Poster for " +movie.title}/></NavLink>
+                <NavLink to={`/${movie.imdbID}`}><img width="200px" height="300px" src={movie.Poster} alt={"Poster for " +movie.Title}/></NavLink>
             </div>
         );
     });
@@ -71,7 +72,7 @@ function MovieList () {
             
             <div className="container d-flex flex-wrap justify-content-center">
                 {returnedMovies}
-                {noMovieFound ? <h1>Error 404: No Movies found</h1> : null}
+                {noMovieFound ? <h1 style={{paddingTop: 15 + '%', paddingBottom: 23 + '%' }}>Error 404: No Movies found</h1> : null}
             </div>
 
             <div id="footer" className="row justify-content-center pt-4 pb-3">
