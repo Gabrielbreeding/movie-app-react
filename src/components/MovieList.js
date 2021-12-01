@@ -17,7 +17,7 @@ function MovieList () {
         setSearchTerm("");
         localStorage.removeItem("searchTerm");
         setNoMovieFound("");
-        document.getElementById("search-bar").value="";
+        document.getElementById("search-bar").value = "";
     };
 
     const handleClick = (movie) => {
